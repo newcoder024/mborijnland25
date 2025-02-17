@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 19 HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form name="enquete">
+        <fieldset>
+            <legend>Enquête</legend>
+            <label for="text">Wat is je naam?</label><br>
+            <input type="text" name="naam" placeholder="Naam:" required><br><br>
+
+            <label for="email">Wat is je emailadres?</label><br>
+            <input type="email" name="email" id="email" placeholder="mail@adres.nl" size="30" required><br><br>
+
+            <label for="nieuwsbronnen">Wat zijn je nieuwsbronnen?</label><br>
+            <input type="checkbox" name="nieuws1" value="kranten">
+            <label for="nieuws1">Kranten</label><br>
+            <input type="checkbox" name="nieuws2" value="tv">
+            <label for="nieuws2">Tv</label><br>
+            <input type="checkbox" name="nieuws3" value="social media">
+            <label for="nieuws3">Social media</label><br>
+            <input type="checkbox" name="nieuws4" value="Geen">
+            <label for="nieuws4">Geen</label><br><br>
+
+            <label for="woonplaats">Hoe betrokken met het klimaat ben jij?</label><br>
+            <select name="woonplaats">
+                <option value="">betrokkenheid:</option>
+                <option value="Duurzaam levend">Duurzaam levend</option>
+                <option value="Gemiddeld betrokken">Gemiddeld betrokken</option>
+                <option value="Neutraal">Neutraal</option>
+            </select><br><br>
+
+            <label for="land">Kies een land:</label><br>
+            <input list="landen" name="land" id="land">
+            <datalist id="landen">
+                <option value="Amerika">Amerika</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Spanje">Spanje</option>
+                <option value="Duitsland">Duitsland</option>
+                <option value="Belgie">Belgie</option>
+            </datalist><br><br>
+
+            <label for="ervaring">Hoe was je ervaring met deze website?</label><br>
+            <input type="radio" name="ervaring" id="positief">
+            <label for="positief">Positief</label><br>
+            <input type="radio" name="ervaring" id="Neutraal">
+            <label for="neutraal">Neutraal</label><br>
+            <input type="radio" name="ervaring" id="negatief">
+            <label for="negatief">Negatief</label><br><br>
+
+            <label for="beoordeling">Hoe zou je deze website beoordelen?</label><br>
+            <input type="range" name="cijfer" id="cijfer" min="1" max="5"><br><br>
+
+            <label for="datum">Wat is je geboortedatum?</label><br>
+            <input type="date" name="datum" id="datum"><br><br>
+
+            <label for="commentaar">Commentaar:</label><br>
+            <textarea name="commentaar" id="commentaar" cols="35" rows="5" placeholder="Vul hier commentaar in:"></textarea><br>
+            <button id="verzendBtn">Verzenden</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
